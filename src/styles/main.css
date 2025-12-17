@@ -1,0 +1,77 @@
+@import url("./variables.css");
+
+/* Minimal reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  color: var(--text);
+  background: var(--gradient-body);
+  overflow-x: hidden;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
+
+a {
+  color: var(--steam-accent-500);
+  text-decoration: none;
+}
+
+a:hover {
+  color: #b3e5ff;
+  text-decoration: underline;
+}
+
+/* App-wide helpers */
+
+.steam-page {
+  min-height: 100vh;
+
+  /* subtle dotted/texture feel using layered gradients */
+  background-image:
+    radial-gradient(rgba(199, 213, 224, 0.06) 1px, rgba(0, 0, 0, 0) 1px),
+    radial-gradient(rgba(199, 213, 224, 0.04) 1px, rgba(0, 0, 0, 0) 1px);
+  background-size: 18px 18px, 26px 26px;
+  background-position: 0 0, 9px 12px;
+}
+
+.container {
+  width: min(var(--container-max), calc(100% - 2 * var(--space-4)));
+  margin: 0 auto;
+}
+
+.panel {
+  background: var(--gradient-panel);
+  border: 1px solid var(--border-2);
+  box-shadow: var(--shadow-1);
+}
+
+/* Accessible focus styles */
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
