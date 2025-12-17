@@ -1,0 +1,76 @@
+/* Steam-like theme tokens (approximate palette)
+   Keep this file purely as variables/tokens.
+*/
+
+:root {
+  /* Typography */
+  --font-sans: "Motiva Sans", "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+  /* Core palette */
+  --steam-ink-900: #0b111a;
+  --steam-ink-800: #0f1722;
+  --steam-ink-700: #171a21; /* classic header bg */
+  --steam-blue-900: #0e1620;
+  --steam-blue-800: #1b2838; /* classic page bg */
+  --steam-blue-700: #223a55;
+  --steam-blue-600: #2a475e;
+  --steam-accent-500: #66c0f4; /* links / highlights */
+  --steam-accent-600: #3d8db8;
+
+  /* Text */
+  --text-strong: #ffffff;
+  --text: #c7d5e0;
+  --text-muted: #8f98a0;
+  --text-faint: #67707b;
+
+  /* Surfaces */
+  --surface-0: rgba(0, 0, 0, 0);
+  --surface-1: rgba(15, 23, 34, 0.85);
+  --surface-2: rgba(27, 40, 56, 0.85);
+  --surface-3: rgba(42, 71, 94, 0.45);
+  --surface-4: rgba(103, 112, 123, 0.15);
+
+  /* Borders & shadows */
+  --border-1: rgba(103, 112, 123, 0.35);
+  --border-2: rgba(199, 213, 224, 0.15);
+  --shadow-1: 0 8px 24px rgba(0, 0, 0, 0.35);
+  --shadow-2: 0 2px 0 rgba(0, 0, 0, 0.35);
+
+  /* Radii */
+  --radius-1: 2px;
+  --radius-2: 3px;
+  --radius-3: 6px;
+
+  /* Spacing */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+
+  /* Layout */
+  --container-max: 980px;
+
+  /* Steam-ish gradients */
+  --gradient-body: radial-gradient(1200px 700px at 65% 20%, rgba(25, 49, 86, 0.65) 0%, rgba(27, 40, 56, 0.95) 45%, rgba(11, 17, 26, 1) 100%);
+  --gradient-panel: linear-gradient(180deg, rgba(27, 40, 56, 0.92) 0%, rgba(15, 23, 34, 0.92) 100%);
+  --gradient-header: linear-gradient(180deg, #171a21 0%, #101821 100%);
+
+  /* Buttons */
+  --btn-bg: rgba(102, 192, 244, 0.18);
+  --btn-bg-hover: rgba(102, 192, 244, 0.26);
+  --btn-border: rgba(102, 192, 244, 0.35);
+
+  /* Focus */
+  --focus-ring: 0 0 0 3px rgba(102, 192, 244, 0.25);
+}
+
+/* Optional: better font rendering on macOS */
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
